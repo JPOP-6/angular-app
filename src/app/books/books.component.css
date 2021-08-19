@@ -1,0 +1,23 @@
+.demo-table {
+    width: 100%;
+  }
+
+  .mat-column-id {
+      padding-left: 16px;
+      font-size: 20px;
+  }
+
+  .mat-column-name {
+    padding-left: 16px;
+    font-size: 20px;
+  }
+
+  .mat-column-price {
+    padding-left: 16px;
+    font-size: 20px;
+  }
+
+  .mat-column-author {
+      padding-left: 16px;
+      font-size: 20px;
+  }

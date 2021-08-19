@@ -1,0 +1,30 @@
+<form class="example-container" [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+<mat-form-field appearance="fill">
+    <mat-label>Book Title</mat-label>
+    <input matInput [formControl]="title" required>
+  </mat-form-field>
+  <br>
+  <mat-form-field appearance="fill">
+    <mat-label>Book Price</mat-label>
+    <input matInput type="number" [formControl]="price" required>
+    <span matPrefix>$&nbsp;</span>
+    <span matSuffix>.00</span>
+  </mat-form-field>
+  <br>
+  <mat-form-field appearance="fill">
+    <mat-label>Book Author</mat-label>
+    <input matInput [formControl]="author" required>
+  </mat-form-field>
+  <br>
+  <mat-form-field appearance="fill">
+    <mat-label>Book Category</mat-label>
+    <input matInput [formControl]="category" required>
+  </mat-form-field>
+  <br>
+  <mat-form-field appearance="fill">
+    <mat-label>Book Publisher</mat-label>
+    <input matInput [formControl]="publisher" required>
+  </mat-form-field>
+  <br>
+  <button mat-raised-button color="primary" type="submit" [disabled]="!formGroup.valid">Submit</button>
+</form>
